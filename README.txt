@@ -9,7 +9,7 @@ Matplotlib.pyplot
 Version 1.1.2
 ========= FUNCTIONS IN LIBRARY ========================================= ]
 
-cleanandendcode
+cleanandencode
 
     '''
     Author: Aru Raghuvanshi
