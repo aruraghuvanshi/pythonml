@@ -6,7 +6,7 @@ LightGBM
 XGBoost
 Seaborn
 Matplotlib.pyplot
-Version 1.1.1
+Version 1.1.2
 ========= FUNCTIONS IN LIBRARY ========================================= ]
 
 cleanandendcode
@@ -104,7 +104,7 @@ reg_comparator
     returns a dataframe with metrics.
 
     Arguments: 4 products of train test split method
-    Returns: Dataframe
+    Returns: Dataframe, plot
     '''
 
 
@@ -119,7 +119,7 @@ clf_comparator
         XGBoost and LightGBM classifiers and returns a dataframe with metrics.
 
         Arguments: four products of train test split method and kfold 'k'
-        Returns: Dataframe
+        Returns: Dataframe, plot
         '''
 
 ======================= END OF FILE ============================================= ]
