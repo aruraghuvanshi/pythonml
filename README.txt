@@ -99,9 +99,9 @@ reg_comparator
     Author: Aru Raghuvanshi
 
     Function takes 4 arguments of datasets split by train test split
-    method and fits 5 regressive machine learning algos of LinearReg,
-    Random Forest, Decision Tree, XGBoost and LightGBM Regressors and
-    returns a dataframe with metrics.
+    method and fits 6 regressive machine learning algos of LinearReg,
+    Random Forest, Decision Tree, XGBoost, KNN and LightGBM Regressors  
+    and returns a dataframe with metrics.
 
     Arguments: 4 products of train test split method
     Returns: Dataframe, plot
@@ -114,9 +114,9 @@ clf_comparator
         Author: Aru Raghuvanshi
 
         Function takes 4 arguments of datasets split by train test split
-        method along with one of KFold value 'k', and fits 5 classifier
+        method along with one of KFold value 'k', and fits 6 classifier
         machine learning algos of LogisticReg, Random Forest, Decision Tree,
-        XGBoost and LightGBM classifiers and returns a dataframe with metrics.
+        XGBoost, KNN and LightGBM classifiers and returns a dataframe with metrics.
 
         Arguments: four products of train test split method and kfold 'k'
         Returns: Dataframe, plot
