@@ -5,11 +5,18 @@ Sklearn
 LightGBM
 XGBoost
 Seaborn
-Matplotlib.pyplot
-Version 1.1.2
-========= FUNCTIONS IN LIBRARY ========================================= ]
+Matplotlib
 
-cleanandencode
+Version 1.4.0
+
+Updated: 01-10-2019:14:34p
+
+========= FUNCTIONS IN LIBRARY - HAMMEROFLIGHT==================================== 
+
+hammeroflight.arufunctions
+---------------------------
+
+1. cleanandencode
 
     '''
     Author: Aru Raghuvanshi
@@ -21,24 +28,49 @@ cleanandencode
     Arguments: Dataframe
     Returns: Dataframe
     '''
+-----------------------------
 
-featureselector
-
-'''
+2. featureselector
+    
+    '''
     Author: Aru Raghuvanshi
 
-    This function takes three parameters val and var and correlation coefficient
-    where val can be a dataframe and var can be an independent variable from that 
-    dataframe. It returns a new dataframe with all those variables dropped whose 
-    correlation is lower than coefficient with the independent variable var.
+    This function takes three parameters of master dataframe, target variable 
+    and correlation coefficient from that dataframe. It returns a new dataframe 
+    with all those variables dropped whose correlation is lower than coefficient 
+    supplied with the independent or target variable 'var'. The variable 'var' 
+    should be converted to numerical category before supply.
 
-    Arguments: DataFrame, variable of comparison, value of coef below to drop.
+    Arguments: DataFrame, variable of comparison, absolute value of coef.
+    Example: df1 = featureselector(df, 'OutCome', 0.11)
+    
     Returns: DataFrame
     '''
+-----------------------------
 
-qualityreport
+3. impute_encode
 
-'''
+    '''
+    Author: Aru Raghuvanshi
+
+    This function takes a dataframe and imputes all the
+    na values with mean if numerical or mode if categorical.
+
+    Drops all columns if nunique = number of rows in dataset.
+    Drops all columns if nunique = 1
+    Label Binarizes cat features if nunique = 2
+    Label Encodes cat features if nunique is between 2 and 5
+    One Hot Encodes cat features if nunique > 6
+
+
+    Arguments: Dataframe
+    Returns: Dataframe
+    '''
+-----------------------------
+
+4. qualityreport
+
+    '''
     Author: Aru Raghuvanshi
 
     This function displays various attributes of a dataframe
@@ -52,23 +84,27 @@ qualityreport
     '''
 
 
-fit_regress
+==============================================================================
 
-'''
+hammeroflight.modelfitter
+
+1. fit_regress
+
+    '''
     Author: Aru Raghuvanshi
 
     This Functions Fits a model with the Train Datasets and
     predicts on a Test Dataset and evaluates its RMSE metric.
 
     Arguments: 5 - estimator, X_train, X_test, y_train, y_test
-    Returns: Train score, Test score, RMSE
-    
+    Returns: Dataframe
+
     '''
+-------------------------------------
 
+2. fit_classify
 
-fit_classify
-
-'''
+    '''
     Author: Aru Raghuvanshi
 
     This Functions Fits a Classifier model with the Train Datasets
@@ -76,11 +112,11 @@ fit_classify
     K-fold cross validation.
 
     Arguments: estimator, X_train, X_test, y_train, y_test, n_splits
-    Returns: Train score, Test score, accuracy score, and displays
-             classification report.
+    Returns: Dataframe
     '''
+-------------------------------------
 
-goodness_fit
+3. goodness_fit
 
 '''
     Author: Aru Raghuvanshi
@@ -92,10 +128,27 @@ goodness_fit
     Returns: Dataframe
     '''
 
+-------------------------------------
 
-reg_comparator
+4. r_plot
 
-'''
+    '''
+    Author: Aru Raghuvanshi
+
+    This functions takes feature dataframe and target variable and plots
+    the regression line on the original dataset to see the fit of the
+    regression. It is essential for X.shape = (abc,1) and y.shape = (abc, ).
+
+    Argument: estimator, X, y
+    Returns: Plot
+    '''
+
+======================================================================
+hammeroflight.modelcomparator
+
+1. reg_comparator
+
+    '''
     Author: Aru Raghuvanshi
 
     Function takes 4 arguments of datasets split by train test split
@@ -108,9 +161,9 @@ reg_comparator
     '''
 
 
-clf_comparator
+2. clf_comparator
 
-'''
+        '''
         Author: Aru Raghuvanshi
 
         Function takes 4 arguments of datasets split by train test split
@@ -122,4 +175,5 @@ clf_comparator
         Returns: Dataframe, plot
         '''
 
-======================= END OF FILE ============================================= ]
+
+======================= END OF FILE ============================================= 
