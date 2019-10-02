@@ -11,6 +11,8 @@ Version 1.4.0
 
 Updated: 01-10-2019:14:34p
 
+Author: Aru Raghuvanshi
+
 ========= FUNCTIONS IN LIBRARY - HAMMEROFLIGHT==================================== 
 
 hammeroflight.arufunctions
@@ -19,7 +21,7 @@ hammeroflight.arufunctions
 1. cleanandencode
 
     '''
-    Author: Aru Raghuvanshi
+   
 
     This functions takes a dataframe and drops columns from it if it has just one
     unique value (recurring values or constant). If a column has two values, it
@@ -33,7 +35,7 @@ hammeroflight.arufunctions
 2. featureselector
     
     '''
-    Author: Aru Raghuvanshi
+    
 
     This function takes three parameters of master dataframe, target variable 
     and correlation coefficient from that dataframe. It returns a new dataframe 
@@ -51,7 +53,7 @@ hammeroflight.arufunctions
 3. impute_encode
 
     '''
-    Author: Aru Raghuvanshi
+    
 
     This function takes a dataframe and imputes all the
     na values with mean if numerical or mode if categorical.
@@ -71,7 +73,7 @@ hammeroflight.arufunctions
 4. qualityreport
 
     '''
-    Author: Aru Raghuvanshi
+    
 
     This function displays various attributes of a dataframe
     imported from an external file like csv, excel etc. and 
@@ -91,12 +93,12 @@ hammeroflight.modelfitter
 1. fit_regress
 
     '''
-    Author: Aru Raghuvanshi
+    
 
     This Functions Fits a model with the Train Datasets and
     predicts on a Test Dataset and evaluates its RMSE metric.
 
-    Arguments: 5 - estimator, X_train, X_test, y_train, y_test
+    Arguments: estimator, X_train, X_test, y_train, y_test
     Returns: Dataframe
 
     '''
@@ -105,7 +107,7 @@ hammeroflight.modelfitter
 2. fit_classify
 
     '''
-    Author: Aru Raghuvanshi
+    
 
     This Functions Fits a Classifier model with the Train Datasets
     and predicts on a Test Dataset and evaluates metrics via n_splits
@@ -118,8 +120,8 @@ hammeroflight.modelfitter
 
 3. goodness_fit
 
-'''
-    Author: Aru Raghuvanshi
+    '''
+    
 
     The functions takes train score and testscore and returns
     goodness of fit in a DataFrame.
@@ -133,7 +135,7 @@ hammeroflight.modelfitter
 4. r_plot
 
     '''
-    Author: Aru Raghuvanshi
+   
 
     This functions takes feature dataframe and target variable and plots
     the regression line on the original dataset to see the fit of the
@@ -156,7 +158,7 @@ hammeroflight.modelcomparator
     Random Forest, Decision Tree, XGBoost, KNN and LightGBM Regressors  
     and returns a dataframe with metrics.
 
-    Arguments: 4 products of train test split method
+    Arguments: xtr, xt, ytr, yt
     Returns: Dataframe, plot
     '''
 
@@ -171,7 +173,7 @@ hammeroflight.modelcomparator
         machine learning algos of LogisticReg, Random Forest, Decision Tree,
         XGBoost, KNN and LightGBM classifiers and returns a dataframe with metrics.
 
-        Arguments: four products of train test split method and kfold 'k'
+        Arguments: xtr, xt, ytr, yt, k=2
         Returns: Dataframe, plot
         '''
 
