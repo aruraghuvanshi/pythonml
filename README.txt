@@ -188,7 +188,7 @@ IV hammeroflight.forecasting
 
 ---------------------------------------------------
 
-2. ordertuner
+2. arimaordertuner
     
     '''
     This function automatically tunes the p, d, q
@@ -199,7 +199,7 @@ IV hammeroflight.forecasting
     Arguments: lower_range, upper_range
     Returns: Best Parameters for ARIMA Model
     
-    Ex: result = tune_order(0,5)
+    Ex: result = arimaordertuner(0,5)
     Will return best permutations for Order of 
     p,d,q with values of each of p d and q between 
     0 and 5.
