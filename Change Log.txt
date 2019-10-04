@@ -1,0 +1,6 @@
+Version __1.4.2__
+------------------
+Changed - r_plot changed to f_plot
+Changed - colors changed to random cycle in f_plot
+Added - Forecasting library functions predictionplot and arimaordertuner
+===================
