@@ -7,7 +7,7 @@ XGBoost
 Seaborn
 Matplotlib
 
-Version 1.4.2
+Version 1.4.3
 
 Updated: 04-10-2019:20:02p
 
@@ -125,7 +125,7 @@ II hammeroflight.modelfitter
 
 -------------------------------------
 
-4. r_plot
+4. fittingplot
 
     '''   
 
@@ -135,6 +135,39 @@ II hammeroflight.modelfitter
 
     Argument: estimator, X, y
     Returns: Plot
+   
+    '''
+
+-------------------------------------
+
+5. kmeans_kfinder
+	
+    '''
+    Standardize (StandardScaler) data before feeding to function.
+    This functions plots the Elbow Curve for KMeans Clustering 
+    to find the elbow value of K.
+    
+    Arguments: (dataframe, lower=0, upper=7)
+    Returns: Plot
+    
+    Defaults of lower=0, upper=7
+    Example: e = elbowplot(df, 0, 5)
+
+    '''
+
+-------------------------------------
+
+6. knn_kfinder
+
+    '''
+    This function plots the KNN elbow plot to figure out
+    the best value for K in the KNN Classifier.
+    
+    Arguments: (xtr, xt, ytr, yt, lower=1, upper=10)
+    Returns: Plot
+    
+    Example: p = knn_plot(X_train, X_test, y_train, y_test, 1, 10)
+    
     '''
 
 ======================================================================

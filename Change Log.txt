@@ -3,3 +3,10 @@ Version __1.4.2__
 Changed - colors changed to random cycle in r_plot
 Added - Forecasting library functions predictionplot and arimaordertuner
 ===================
+
+Version __1.4.3__
+------------------
+Added - kmeans_kfinder to hammeroflight.modelfitter
+Added - knn_kfinder to hammeroflight.modelfitter
+Renamed - r_plot to fittingplot in modelfitter.
+===================
