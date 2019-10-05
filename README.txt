@@ -7,16 +7,16 @@ XGBoost
 Seaborn
 Matplotlib
 
-Version 1.4.3
+Version 1.4.4
 
-Updated: 04-10-2019:20:02p
+Updated: 05-10-2019:17:46p
 
 Author: Aru Raghuvanshi
 
 ========= FUNCTIONS IN LIBRARY - HAMMEROFLIGHT==================================== 
 
 I hammeroflight.arufunctions
----------------------------
+--------------------------------
 
 1. cleanandencode(df)
 
@@ -85,6 +85,8 @@ I hammeroflight.arufunctions
 ==============================================================================
 
 II hammeroflight.modelfitter
+--------------------------------
+
 
 1. fit_regress() 
 
@@ -173,6 +175,8 @@ II hammeroflight.modelfitter
 
 ======================================================================
 III hammeroflight.modelcomparator
+--------------------------------
+
 
 1. reg_comparator()
 
@@ -203,8 +207,10 @@ III hammeroflight.modelcomparator
 
 ======================================================================
 IV hammeroflight.forecasting
+--------------------------------
 
-1. predictionplot(truth, pred)
+
+1. plot_forecast(truth, pred)
 
     '''
     
@@ -222,7 +228,7 @@ IV hammeroflight.forecasting
 
 ---------------------------------------------------
 
-2. arimaordertuner(lowerrange, upperrange)
+2. arima_ordertuner(lowerrange, upperrange)
     
     '''
     This function automatically tunes the p, d, q
@@ -239,8 +245,5 @@ IV hammeroflight.forecasting
     0 and 5.
     
     '''
-
-
-
 
 ======================= END OF FILE ============================================= 

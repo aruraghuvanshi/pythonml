@@ -10,3 +10,11 @@ Added - kmeans_kfinder to hammeroflight.modelfitter
 Added - knn_kfinder to hammeroflight.modelfitter
 Renamed - r_plot to fittingplot in modelfitter.
 ===================
+
+Version __1.4.4__
+------------------
+Renamed predictionplot() to plot_forecast()
+Renamed arimaordertuner() to arima_ordertuner()
+Updated: KNN plot K-graph to plot K against Test Accuracy
+Changed: Colors in KNN plotting.
+===================
