@@ -18,7 +18,7 @@ Author: Aru Raghuvanshi
 I hammeroflight.arufunctions
 ---------------------------
 
-1. cleanandencode
+1. cleanandencode(df)
 
     '''
 
@@ -31,7 +31,7 @@ I hammeroflight.arufunctions
     '''
 -----------------------------
 
-2. featureselector
+2. featureselector(df, 'Target', 0.21)
     
     '''   
 
@@ -48,7 +48,7 @@ I hammeroflight.arufunctions
     '''
 -----------------------------
 
-3. impute_encode
+3. impute_encode(df, dummy=True)
 
     '''    
 
@@ -67,7 +67,7 @@ I hammeroflight.arufunctions
     '''
 -----------------------------
 
-4. qualityreport
+4. qualityreport(df)
 
     '''    
 
@@ -86,20 +86,20 @@ I hammeroflight.arufunctions
 
 II hammeroflight.modelfitter
 
-1. fit_regress
+1. fit_regress() 
 
     '''   
 
     This Functions Fits a model with the Train Datasets and
     predicts on a Test Dataset and evaluates its RMSE metric.
 
-    Arguments: estimator, X_train, X_test, y_train, y_test
+    Arguments: estimator, xtr, xt, ytr, yt
     Returns: Dataframe
 
     '''
 -------------------------------------
 
-2. fit_classify
+2. fit_classify()
 
     '''    
 
@@ -107,12 +107,12 @@ II hammeroflight.modelfitter
     and predicts on a Test Dataset and evaluates metrics via n_splits
     K-fold cross validation.
 
-    Arguments: estimator, X_train, X_test, y_train, y_test, n_splits
+    Arguments: estimator, xtr, xt, ytr, yt, k=2
     Returns: Dataframe
     '''
 -------------------------------------
 
-3. goodness_fit
+3. goodness_fit(trainscore, testscore)
 
     '''    
 
@@ -125,7 +125,7 @@ II hammeroflight.modelfitter
 
 -------------------------------------
 
-4. fittingplot
+4. fittingplot(estimator, a, b)
 
     '''   
 
@@ -133,14 +133,15 @@ II hammeroflight.modelfitter
     the regression line on the original dataset to see the fit of the
     regression. It is essential for X.shape = (abc,1) and y.shape = (abc, ).
 
-    Argument: estimator, X, y
+    Argument: estimator, a, b
     Returns: Plot
+    a and b: can be a list or iterable or a pandas series
    
     '''
 
 -------------------------------------
 
-5. kmeans_kfinder
+5. kmeans_kfinder(1, 20)
 	
     '''
     Standardize (StandardScaler) data before feeding to function.
@@ -157,7 +158,7 @@ II hammeroflight.modelfitter
 
 -------------------------------------
 
-6. knn_kfinder
+6. knn_kfinder(X_train, X_test, y_train, y_test, 1, 10)
 
     '''
     This function plots the KNN elbow plot to figure out
@@ -173,7 +174,7 @@ II hammeroflight.modelfitter
 ======================================================================
 III hammeroflight.modelcomparator
 
-1. reg_comparator
+1. reg_comparator()
 
     '''
 
@@ -187,7 +188,7 @@ III hammeroflight.modelcomparator
     '''
 
 
-2. clf_comparator
+2. clf_comparator()
 
         '''      
 
@@ -203,7 +204,7 @@ III hammeroflight.modelcomparator
 ======================================================================
 IV hammeroflight.forecasting
 
-1. predictionplot
+1. predictionplot(truth, pred)
 
     '''
     
@@ -221,7 +222,7 @@ IV hammeroflight.forecasting
 
 ---------------------------------------------------
 
-2. arimaordertuner
+2. arimaordertuner(lowerrange, upperrange)
     
     '''
     This function automatically tunes the p, d, q
