@@ -7,7 +7,7 @@ XGBoost
 Seaborn
 Matplotlib
 
-Version 1.6
+Version 1.6.1
 
 Updated: 06-10-2019:23:46p
 
