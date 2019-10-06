@@ -19,7 +19,7 @@ Updated: KNN plot K-graph to plot K against Test Accuracy
 Changed: Colors in KNN plotting.
 ===================
 
-Version __1.5__
+Version __1.5.1__
 ------------------
 Renamed: modelfitter.fit_regress() renamed to run_regressor()
 Renamed: modelfitter.fit_classify() renamed to run_classifier()
