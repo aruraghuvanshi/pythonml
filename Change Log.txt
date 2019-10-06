@@ -27,7 +27,7 @@ Added: Plot - training and test scores in run_regressor()
 Added: Plot - training and test scores in run_classifier() 
 ===================
 
-Version __1.6.1__
+Version __1.6.2__
 ------------------
 Added: New module hammeroflight.plotter
 Added: testplot() to plotter
