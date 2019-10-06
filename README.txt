@@ -1,13 +1,14 @@
-Dependencies:
-Numpy
-Pandas
-Sklearn
-LightGBM
-XGBoost
-Seaborn
-Matplotlib
+Use !pip install hammeroflight in Jupyter Notebook cell to download.
+Alternatively, from the command prompt or anaconda powershell prompt - pip install hammeroflight.
 
-Version 1.6.2
+If installing an upgraded version:
+!pip install hammeroflight==x.x.x
+or pip install hammmeroflight==x.x.x from command prompt or anaconda powershell prompt.
+Example: pip install hammeroflight==1.2.3 or pip install hammeroflight==1.1
+
+===========================
+CURRENT VERSION __1.6.2__
+===========================
 
 Updated: 06-10-2019:23:46p
 
