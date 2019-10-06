@@ -7,9 +7,9 @@ XGBoost
 Seaborn
 Matplotlib
 
-Version 1.4.4
+Version 1.5
 
-Updated: 05-10-2019:17:46p
+Updated: 06-10-2019:17:46p
 
 Author: Aru Raghuvanshi
 
@@ -88,29 +88,30 @@ II hammeroflight.modelfitter
 --------------------------------
 
 
-1. fit_regress() 
+1. run_regressor() 
 
     '''   
 
-    This Functions Fits a model with the Train Datasets and
-    predicts on a Test Dataset and evaluates its RMSE metric.
-
-    Arguments: estimator, xtr, xt, ytr, yt
-    Returns: Dataframe
+    This Functions Fits a Regression model with the Train Datasets and
+    predicts on a Test Dataset and evaluates its various metrics.
+    Predictions are available in the global variable 'pred'.
+    Default KFold cross validation is 3.
+    Arguments: estimator, X_train, X_test, y_train, y_test
+    Returns: Metrics, Plot
 
     '''
 -------------------------------------
 
-2. fit_classify()
+2. run_classifier()
 
     '''    
 
-    This Functions Fits a Classifier model with the Train Datasets
-    and predicts on a Test Dataset and evaluates metrics via n_splits
-    K-fold cross validation.
-
-    Arguments: estimator, xtr, xt, ytr, yt, k=2
-    Returns: Dataframe
+    This Functions Fits a classification model with the Train Datasets and
+    predicts on a Test Dataset and evaluates its various metrics.
+    Predictions are available in the global variable 'pred'.
+    Default KFold cross validation is 3.
+    Arguments: estimator, X_train, X_test, y_train, y_test
+    Returns: Metrics, Plot
     '''
 -------------------------------------
 

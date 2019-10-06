@@ -18,3 +18,11 @@ Renamed arimaordertuner() to arima_ordertuner()
 Updated: KNN plot K-graph to plot K against Test Accuracy
 Changed: Colors in KNN plotting.
 ===================
+
+Version __1.5__
+------------------
+Renamed: modelfitter.fit_regress() renamed to run_regressor()
+Renamed: modelfitter.fit_classify() renamed to run_classifier()
+Added: Plot - training and test scores in run_regressor() 
+Added: Plot - training and test scores in run_classifier() 
+===================
