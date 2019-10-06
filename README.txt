@@ -7,9 +7,9 @@ XGBoost
 Seaborn
 Matplotlib
 
-Version 1.5
+Version 1.6
 
-Updated: 06-10-2019:17:46p
+Updated: 06-10-2019:23:46p
 
 Author: Aru Raghuvanshi
 
@@ -115,36 +115,9 @@ II hammeroflight.modelfitter
     '''
 -------------------------------------
 
-3. goodness_fit(trainscore, testscore)
 
-    '''    
 
-    The functions takes train score and testscore and returns
-    goodness of fit in a DataFrame.
-
-    Arguments: trainscore, testscore
-    Returns: Dataframe
-    '''
-
--------------------------------------
-
-4. fittingplot(estimator, a, b)
-
-    '''   
-
-    This functions takes feature dataframe and target variable and plots
-    the regression line on the original dataset to see the fit of the
-    regression. It is essential for X.shape = (abc,1) and y.shape = (abc, ).
-
-    Argument: estimator, a, b
-    Returns: Plot
-    a and b: can be a list or iterable or a pandas series
-   
-    '''
-
--------------------------------------
-
-5. kmeans_kfinder(1, 20)
+3. kmeans_kfinder(1, 20)
 	
     '''
     Standardize (StandardScaler) data before feeding to function.
@@ -161,7 +134,7 @@ II hammeroflight.modelfitter
 
 -------------------------------------
 
-6. knn_kfinder(X_train, X_test, y_train, y_test, 1, 10)
+4. knn_kfinder(X_train, X_test, y_train, y_test, 1, 10)
 
     '''
     This function plots the KNN elbow plot to figure out
@@ -206,12 +179,41 @@ III hammeroflight.modelcomparator
         Returns: Dataframe, plot
         '''
 
+
+
 ======================================================================
-IV hammeroflight.forecasting
+IV hammeroflight.plotter
 --------------------------------
 
+1. fittingplot(estimator, a, b)
 
-1. plot_forecast(truth, pred)
+    '''   
+
+    This functions takes feature dataframe and target variable and plots
+    the regression line on the original dataset to see the fit of the
+    regression. It is essential for X.shape = (abc,1) and y.shape = (abc, ).
+
+    Arguments: estimator, a, b
+    Returns: Plot
+    a and b: can be a list or iterable or a pandas series
+   
+    '''
+---------------------------------------------------
+
+
+2. testplot(y_test, y_pred)
+    
+    ''' 
+    
+
+    This function plots graph between truth values and predicted values.
+    Arguments: truth, pred
+    Returns: Plot
+
+---------------------------------------------------
+
+
+3. plot_forecast(truth, pred)
 
     '''
     
@@ -227,9 +229,12 @@ IV hammeroflight.forecasting
     
     '''
 
----------------------------------------------------
 
-2. arima_ordertuner(lowerrange, upperrange)
+======================================================================
+V hammeroflight.forecasting
+--------------------------------
+
+1. arima_ordertuner(lowerrange, upperrange)
     
     '''
     This function automatically tunes the p, d, q
@@ -246,5 +251,7 @@ IV hammeroflight.forecasting
     0 and 5.
     
     '''
+
+
 
 ======================= END OF FILE ============================================= 

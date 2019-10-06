@@ -26,3 +26,11 @@ Renamed: modelfitter.fit_classify() renamed to run_classifier()
 Added: Plot - training and test scores in run_regressor() 
 Added: Plot - training and test scores in run_classifier() 
 ===================
+
+Version __1.6__
+------------------
+Added: New module hammeroflight.plotter
+Added: testplot() to plotter
+Moved: fittingplot(), testplot(), plot_forecast() to plotter
+Removed: knn_kfinder(), kmeans_kfinder() and moved to modelfitter
+===================
