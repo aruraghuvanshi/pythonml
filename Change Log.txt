@@ -34,3 +34,11 @@ Added: testplot() to plotter
 Moved: fittingplot(), testplot(), plot_forecast() to plotter
 Removed: knn_kfinder(), kmeans_kfinder() and moved to modelfitter
 ===================
+
+
+Version __1.7.2___
+Added: Integrity Report to hammeroflight.arufunctions
+Added: assocrules to hammeroflight
+Added: get_records() to hammeroflight.assocrules
+Added: display_results() to hammeroflight.assocrules
+===================
