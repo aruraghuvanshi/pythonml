@@ -7,7 +7,7 @@ or pip install hammmeroflight==x.x.x from command prompt or anaconda powershell 
 Example: pip install hammeroflight==1.2.3 or pip install hammeroflight==1.1
 
 ===========================
-CURRENT VERSION __1.7.2__
+CURRENT VERSION __1.7.3__
 ===========================
 
 Updated: 06-10-2019:23:46p
@@ -83,6 +83,19 @@ I hammeroflight.arufunctions
     '''
 
 
+5. integrity_report(df)
+    
+    '''
+    This function displays various attributes of a dataframe
+    imported from an external file like csv, excel etc. and 
+    displays NaN values, percentage of missing data, shape
+    of Dataset, Number of Categorical and Numerical features
+    and dtypes of the dataset and returns a plot along with
+    a dataframe for visualization of data.
+
+    Arguments: Dataframe
+    Returns: Dataframe, plot
+    
 ==============================================================================
 
 II hammeroflight.modelfitter
@@ -115,8 +128,6 @@ II hammeroflight.modelfitter
     Returns: Metrics, Plot
     '''
 -------------------------------------
-
-
 
 3. kmeans_kfinder(1, 20)
 	
