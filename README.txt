@@ -7,10 +7,10 @@ or pip install hammmeroflight==x.x.x from command prompt or anaconda powershell 
 Example: pip install hammeroflight==1.2.3 or pip install hammeroflight==1.1
 
 ===========================
-CURRENT VERSION __1.7.3__
+CURRENT VERSION __1.7.4__
 ===========================
 
-Updated: 06-10-2019:23:46p
+Updated: 22-10-2019:17:23p
 
 Author: Aru Raghuvanshi
 
