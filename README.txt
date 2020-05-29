@@ -7,7 +7,7 @@ or pip install hammmeroflight==x.x.x from command prompt or anaconda powershell 
 Example: pip install hammeroflight==1.2.3 or pip install hammeroflight==1.1
 
 ===========================
-CURRENT VERSION __1.7.4__
+CURRENT VERSION __1.8__
 ===========================
 
 Updated: 22-10-2019:17:23p
@@ -240,7 +240,33 @@ IV hammeroflight.plotter
     Returns: Plot
     
     '''
+---------------------------------------------------
 
+4. Variable Plotter
+
+	'''
+    
+    	The functions plots graph between two variables.
+    	bar = True by default, else Line
+    	title, xlabel, ylabel: Pass as type str.
+    
+    	Returns: Plot
+	'''
+---------------------------------------------------
+
+
+5. Historyplot
+
+	'''
+	
+	Plots the evaluation metrics of CNN.
+    	model.history.history
+    	Where the eval metrics are val_loss 
+    	or val_accuracy, or loss or accuracy
+    
+    	Returns: Plot
+	
+	'''
 
 ======================================================================
 V hammeroflight.forecasting

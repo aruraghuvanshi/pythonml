@@ -42,3 +42,8 @@ Added: assocrules to hammeroflight
 Added: get_records() to hammeroflight.assocrules
 Added: display_results() to hammeroflight.assocrules
 ===================
+
+
+Version 1.8
+Added: Variable Plotter to hammeroflight.plotter
+Added: historyplot to hammeroflight.plotter
