@@ -43,7 +43,11 @@ Added: get_records() to hammeroflight.assocrules
 Added: display_results() to hammeroflight.assocrules
 ===================
 
-
-Version 1.8
+Version __1.8__
 Added: Variable Plotter to hammeroflight.plotter
 Added: historyplot to hammeroflight.plotter
+
+===================
+Version __2.1__
+Bug Fixes
+
