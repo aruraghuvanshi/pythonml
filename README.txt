@@ -1,10 +1,10 @@
-Use !pip install hammeroflight in Jupyter Notebook cell to download.
-Alternatively, from the command prompt or anaconda powershell prompt - pip install hammeroflight.
+Use !pip install pythonml in Jupyter Notebook cell to download.
+Alternatively, from the command prompt or anaconda powershell prompt - pip install pythonml.
 
 If installing an upgraded version:
-!pip install hammeroflight==x.x.x
+!pip install pythonml==x.x.x
 or pip install hammmeroflight==x.x.x from command prompt or anaconda powershell prompt.
-Example: pip install hammeroflight==1.2.3 or pip install hammeroflight==1.1
+Example: pip install pythonml==1.2.3 or pip install pythonml==1.1
 
 ===========================
 CURRENT VERSION __2.1__
@@ -14,9 +14,9 @@ Updated: 22-10-2019:17:23p
 
 Author: Aru Raghuvanshi
 
-========= FUNCTIONS IN LIBRARY - HAMMEROFLIGHT==================================== 
+========= FUNCTIONS IN LIBRARY - pythonml==================================== 
 
-I hammeroflight.arufunctions
+I pythonml.datafunctions
 --------------------------------
 
 1. cleanandencode(df)
@@ -98,7 +98,7 @@ I hammeroflight.arufunctions
     
 ==============================================================================
 
-II hammeroflight.modelfitter
+II pythonml.modelfitter
 --------------------------------
 
 
@@ -160,7 +160,7 @@ II hammeroflight.modelfitter
     '''
 
 ======================================================================
-III hammeroflight.modelcomparator
+III pythonml.modelcomparator
 --------------------------------
 
 
@@ -194,7 +194,7 @@ III hammeroflight.modelcomparator
 
 
 ======================================================================
-IV hammeroflight.plotter
+IV pythonml.plotter
 --------------------------------
 
 1. fittingplot(estimator, a, b)
@@ -269,7 +269,7 @@ IV hammeroflight.plotter
 	'''
 
 ======================================================================
-V hammeroflight.forecasting
+V pythonml.forecasting
 --------------------------------
 
 1. arima_ordertuner(lowerrange, upperrange)
