@@ -10,7 +10,7 @@ Example: pip install pythonml==1.2.3 or pip install pythonml==1.1
 CURRENT VERSION __1.00__
 ===========================
 
-Updated: 22-10-2019:17:23p
+Updated: 23-07-2020:12:46p
 
 Author: Aru Raghuvanshi
 
